@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>API for Electric Games</header>
+
+    <main>
+      <section>
+        <h3>Endpoints</h3>
+        <ul>
+          <li>Get all: https://localhost:7012/game</li>
+          <li>Get from ID: https://localhost:7012/game/(id)</li>
+          <li>Get from Title: https://localhost:7012/game?title=(title)</li>
+          <li>Get Picture: https://localhost:7012/images/(picturename).jpg</li>
+        </ul>
+      </section>
+      <section>
+        <h3>How the data is in the API:</h3>
+        <ul>
+          <li>Id: int</li>
+          <li>Title: string</li>
+          <li>Platform: string</li>
+          <li>Releaseyear: string</li>
+          <li>Image: File | string</li>
+        </ul>
+      </section>
+      <section>
+        The different links above is to access the different games using
+        different values.
+        <p>
+          When getting something from the API using the ID value from a game you
+          would need to put in the URL: https://localhost:7012/game/3. This
+          would make you get the game with the ID: 3.
+        </p>
+        <p>
+          When getting something from the API using the title value from a game
+          you would need to put in the URL:
+          https://localhost:7012/game?title=dragonBall. This would make you get
+          the game with the the title dragonBall.
+        </p>
+        <p>
+          If you would want to get only the picture of a game you need to put in
+          the URL: https://localhost:7012/images/dragonBall.jpg. This would mean
+          that you need to know what the pictures name is saved in the wwwroot
+          folder images. In this example we would get the dragonball picure
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
